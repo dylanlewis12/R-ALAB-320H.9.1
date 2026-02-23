@@ -31,6 +31,8 @@ function App() {
     });
   }
 
+  console.log(todos);
+
   return (
     <>
       <h1>Create Todo List</h1>

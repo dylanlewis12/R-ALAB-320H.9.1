@@ -3,7 +3,7 @@ import Card from "./Card.jsx";
 
 export default function TodoList({todos, onChangeTodo, onDeleteTodo}) {
     return (
-        <ul style={{listStyle: "none", padding: 0}}>
+        <div style={{display: "grid", gridTemplateColumns: "auto auto auto", gap: "20px", padding: "20px", listStyleType: "none"}}>
             {todos.map((todo) => (
                 <li key={todo.id}>
                     <Card>
@@ -12,7 +12,7 @@ export default function TodoList({todos, onChangeTodo, onDeleteTodo}) {
                 </li>
               
             ))}
-        </ul>
+        </div>
     );
 }
 
